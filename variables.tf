@@ -67,7 +67,7 @@ variable "policy" {
 variable "tags" {
   description = "(Optional) A mapping of tags to assign to the bucket."
   type        = map(string)
-  default     = {}
+  default     = {Name = "s3bucket-tf"}
 }
 
 variable "force_destroy" {
